@@ -1,10 +1,13 @@
+@import "/src/shared/variables";
+@import "/src/shared/theme";
+
 .main-wrapper {
-  background-color: rgb(243, 243, 243);
-  width: 80%;
-  padding: 1rem 2rem;
+  background-color: $content-wrapper-bgcolor;
+  width: $width-of-child;
+  padding: $default-offset $default-offset-double;
   box-sizing: border-box;
   overflow-y: auto;
-  max-height: calc(100vh - 4rem);
+  max-height: calc(100vh - $height-of-header);
   a {
     outline: none;
     text-decoration: none;
@@ -18,15 +21,15 @@
     box-shadow: 2px 2px 2px black;
   }
   &::-webkit-scrollbar-track {
-    background-color: rgb(243, 243, 243);
+    background-color: $content-wrapper-bgcolor;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(180, 177, 177, 0.822);
+    background-color: $bgcolor-scrollbar-thumb;
     border-radius: 1px;
   }
 
   &::-webkit-scrollbar {
-    width: 0.5rem;
+    width: $default-offset-half;
   }
 }

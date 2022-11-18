@@ -1,34 +1,37 @@
+@import "/src/shared/variables";
+@import "/src/shared/theme";
+
 .wrapper {
-  padding: 0.5rem 1rem;
-  margin: 0.3rem;
-  background-color: white;
+  padding: $default-offset-half $default-offset;
+  margin: $default-offset-half;
+  background-color: $light-color;
   border-radius: 0.2rem;
 
   .up {
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: $default-font-size-big;
 
     span {
       font-weight: bold;
-      color: grey;
+      color: $secondary-text-color;
     }
 
     h3 {
-      font-size: 1.2rem;
+      font-size: $default-font-size-big;
     }
   }
 
   .down {
     display: flex;
     flex-direction: row;
-    font-size: 0.9rem;
-    color: grey;
+    font-size: $default-font-size-small;
+    color: $secondary-text-color;
     span {
       font-style: italic;
     }
     p {
-      padding: 0 0.5rem;
+      padding: 0 $default-offset-half;
     }
   }
 }

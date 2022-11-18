@@ -1,46 +1,49 @@
+@import "/src/shared/variables";
+@import "/src/shared/theme";
+
 .story-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: $default-offset $default-offset-double;
   box-sizing: border-box;
-  max-height: calc(100vh - 4rem);
+  max-height: calc(100vh - $height-of-header);
 
   .story {
     width: 100%;
 
     .information {
-      padding: 0.5rem 0;
+      padding: $default-offset-half 0;
       p {
-        margin-top: 0.5rem;
+        margin-top: $default-offset-half;
       }
     }
   }
   .comments {
     font-size: 0.9rem;
-    width: 80%;
-    background-color: rgb(243, 243, 243);
-    padding: 1rem 2rem;
+    width: $width-of-child;
+    background-color: $content-wrapper-bgcolor;
+    padding: $default-offset $default-offset-double;
     box-sizing: border-box;
     overflow-y: auto;
 
     &::-webkit-scrollbar-track {
-      background-color: rgb(243, 243, 243);
+      background-color: $content-wrapper-bgcolor;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(180, 177, 177, 0.822);
+      background-color: $bgcolor-scrollbar-thumb;
       border-radius: 1px;
     }
 
     &::-webkit-scrollbar {
-      width: 0.5rem;
+      width: $default-offset-half;
     }
   }
   hr {
     width: 90%;
-    color: black;
+    color: $primary-text-color;
   }
 
   .answers {
