@@ -50,4 +50,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  .show-answers {
+    &:hover {
+      cursor: pointer;
+      color: $primary-text-color;
+    }
+    text-decoration: underline;
+  }
 }
