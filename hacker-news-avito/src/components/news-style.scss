@@ -1,0 +1,34 @@
+.wrapper {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  background-color: white;
+  border-radius: 0.2rem;
+
+  .up {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+
+    span {
+      font-weight: bold;
+      color: grey;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .down {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    color: grey;
+    span {
+      font-style: italic;
+    }
+    p {
+      padding: 0 0.5rem;
+    }
+  }
+}
