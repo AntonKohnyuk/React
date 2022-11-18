@@ -1,9 +1,12 @@
+@import "/src/shared/variables";
+@import "/src/shared/theme";
+
 .header {
   width: 100%;
-  background-color: rgb(87, 132, 228);
+  background-color: $header-bgcolor;
   box-sizing: border-box;
-  height: 4rem;
-  color: white;
-  font-size: 3rem;
-  padding: 0.25rem 0.5rem;
+  height: $height-of-header;
+  color: $light-color;
+  font-size: $default-font-size-header;
+  padding: $default-offset-one-quarter $default-offset-half;
 }
