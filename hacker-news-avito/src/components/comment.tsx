@@ -46,7 +46,7 @@ function CommentView({ comment }: CommentProps) {
         <p>Answers: {comment.kids?.length || 0}</p>
         {comment.kids?.length && (
           <span
-            style={{ textDecoration: "underline" }}
+            className="show-answers"
             onClick={() => {
               setShowAnswers(!showAnswers);
             }}
